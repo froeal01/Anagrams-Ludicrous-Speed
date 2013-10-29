@@ -1,0 +1,16 @@
+<div class="container">
+ <h1 align="center">Welcome to the Anagram Machine<h1>
+
+
+<% if  @array %>
+ <%= erb :_anagram %>
+ <% end %>
+
+<form action="/anagram" method="post">
+      <p align="center"> Enter your word below:</p>
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Enter">
+  </form>
+</div>
+
